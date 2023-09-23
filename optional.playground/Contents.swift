@@ -81,3 +81,42 @@ var name2 = "Hadiuzzaman"
 print(name1+name2)
 print(name2.count)
 print(name2.isEmpty)
+
+
+// Array
+print("Array Example")
+var exampleArray1 : [Int] = [1,2,44,5]
+print(exampleArray1)
+var exampleArray2 = [1,2,3,4,5]
+print(exampleArray2)
+var exampleArray3 = Array(repeating: 2, count: 6)
+print(exampleArray3)
+var someNumber : [Double] = Array(repeating: 2.3, count: 10)
+print(someNumber)
+var exampleArray4 : [Int] = []
+exampleArray4.append(44)
+exampleArray4.append(54)
+print(exampleArray4)
+
+// enumerated() return index, and item
+for (index, item) in exampleArray2.enumerated(){
+    print(index, " ", item)
+}
+
+//Function
+
+/// Function without returnn type
+func showDetails(name: String) {
+    
+    print("Name: ", name)
+}
+
+showDetails(name: "Md Hadiuzzaman")
+
+/// Function with return type
+func calculateArea(radius: Int) -> Int{
+   var result = ((radius*radius))
+    return result
+}
+
+print(calculateArea(radius: 34))
