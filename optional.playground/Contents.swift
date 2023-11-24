@@ -120,3 +120,26 @@ func calculateArea(radius: Int) -> Int{
 }
 
 print(calculateArea(radius: 34))
+
+
+///Function with multiple return
+func getInfo() -> (age: Int, gpa: Double) {
+    return (4, 2.33)
+}
+print(getInfo())
+var resullt = getInfo()
+print(resullt.age, resullt.gpa)
+
+/// Optional return
+func getMyInfo(flag: Bool) -> (name: String, age: Int)? {
+    if flag {
+        return nil
+    }
+    return ("Hadi", 24)
+}
+var result1 = getMyInfo(flag: false)
+if result1 != nil {
+    print(result1!.age, result1!.name)
+}
+
+

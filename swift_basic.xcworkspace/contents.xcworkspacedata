@@ -4,4 +4,10 @@
    <FileRef
       location = "group:optional.swift">
    </FileRef>
+   <FileRef
+      location = "group:exemple1.swift">
+   </FileRef>
+   <FileRef
+      location = "group:basic_syntax.swift">
+   </FileRef>
 </Workspace>
