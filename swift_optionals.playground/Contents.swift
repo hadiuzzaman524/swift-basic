@@ -36,3 +36,39 @@ if let value = firstName{
 }else{
     print("There is no value")
 }
+
+// Constant
+/*
+ Before you use constants, you must declare them using let keyword as follows −
+ */
+let constA = 43
+print(constA)
+
+// Control statement
+let x = 10
+switch x {
+case 1:
+    print("One")
+case 2:
+    print("Two")
+    
+default:
+    print("Call Default")
+}
+
+
+/// Gaurd Statement
+/*
+ Swift Guard statement is used as a substitute of Swift if statement. Guard statement provides benefits over if statement to control the program flow and write simple and clean code.
+ */
+
+func function1(var x : Int){
+    guard x>10 else{
+        // only call this block when condition is false
+        print("Condition is not satisfied")
+        return
+    }
+    print("Condition is satisfied")
+}
+
+function1(var: 14)
