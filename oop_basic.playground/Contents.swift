@@ -80,3 +80,29 @@ class Student1{
 
 var habib = Student1(name: "Habib", age: 21, department: "MBBS")
 print(habib.message)
+
+/// Another example of computated property
+///
+
+class Circle{
+    var radius:Double
+    init(radius:Double){
+        self.radius = radius
+    }
+    var area:Double{
+        get{
+            return radius*radius*3.1416
+        }
+        /// reverse way to set stored property
+        set(newValue){
+            radius = sqrt(newValue/3.1416)
+        }
+    }
+}
+
+var circle = Circle(radius: 20)
+print(circle.area)
+
+// Reverse way to set value
+circle.area = 1256.6399999999999
+print(circle.radius)
