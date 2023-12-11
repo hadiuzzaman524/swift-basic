@@ -58,3 +58,25 @@ d1.name = "CSE"
 d1.alldept.append(x1) /// just initialized alldept here
 
 print(d1.alldept)
+
+// Computed Property
+/*
+We can define computed properties as the part of the instance of Classes, Structure, and Enum types. Unlike stored properties, the computed properties don't store the values. Instead, they provide getter and optional setter to retrieve and set other properties and values indirectly.
+ */
+class Student1{
+    var name:String
+    var age:Int
+    var department:String
+    var message:String{
+        return "My, Name: \(name) Age: \(age) Department: \(department)";
+    }
+    
+    init(name:String, age:Int, department:String){
+        self.name = name
+        self.age = age
+        self.department = department
+    }
+}
+
+var habib = Student1(name: "Habib", age: 21, department: "MBBS")
+print(habib.message)
